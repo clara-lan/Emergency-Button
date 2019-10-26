@@ -1,0 +1,16 @@
+.Title{
+    height: 5em;
+    text-align:center;
+    font-size: 1.5em;
+    padding: 2em 1em 0em 1em;
+    border-radius:20px 20px 0 0;
+}
+
+.reg-form-container{
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 16px 0;
+    background-color: rgba(145, 182, 196,0.8);
+    width: fit-content;
+}
