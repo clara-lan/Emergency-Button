@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Press4 Life</title>
+</head>
+<body>
+    <main>
+        <header>
+            <div>
+                <p class = "HderTitle">
+                    Press4 Life
+                    <br> </br>
+                    Press four seconds for your beloved ones.
+                    <img id="logo" src="" alt="">
+                </p>
+
+
+            </div>
+        </header>
+
+
+        <div class="container">
+
+                <div class="Title">
+                    <p>
+                        Personal Information
+                    </p>
+
+                </div>
+
+
+
+                <div class="form-container">
+                    <form id = "myForm">
+                        <ul>
+                        <li> FirstName: <input type = "text" name = "FirstName" value = " " style = "width:18em"> </li>
+                        <li>LastName: <input type = "text" name = "LastName" value = " " style = "width:18em"> </li>
+                        <li>Gender: Female <input type = "radio" name = "gender" value = "F">    Male<input type = "radio" name="gender" value="M">  Other <input type = "radio" name="gender" value="Unclassified"> </li>
+                        <li>Phone Number: <input type="number" name="phone_num" value=" " size = "10" > </li>
+                        <li>Device ID: <input type = "number"  name="deviceID"  style = "width:18em"> </li>
+                        <li>Date of Birth: <input type = "date" name = "DOB"  style = "width:18em"> </li>
+                        <li>Address line1: <input type = "text" name = "addressline1" value =" " style = "width:18em"> </li>
+                        <li>Address line2: <input type = text" name = "state" value = " " style = "width:18em">  </li>
+                        <li>Zip Code: <input type = "number" name = "zipcode" value = " " style = "width:18em"> </li>
+                        <li>Doctor's Name: <input type="tetx" name = "doctorName" value=" " style = "width:18em"> </li>
+                        <li>Doctor's Organization: <input type = "text" name = "DoctorOrg" value=" " style = "width:18em">  </li>
+                        <li>Emergency Contact: <input type="text" name = "EName" value = " " style = "width:18em"> </li>
+                        <li>Emergency Contact's number:<input type = "number" name = "ENumber" value = "" style = "width:18em"> </li>
+                        <li> Medical Condition: <input type = "text" name="MCondition" value =" " style = "width:18em" size = "140">  </li>
+                        </ul>
+                    </form>
+
+
+
+
+                    <div>
+                        <p class="Buttons">
+                            <button onclick = "submit()" >Submit</button>
+                            <button onclick = "cancel()">Cancel</button>
+                        </p>
+
+                    </div>
+
+                </div>
+
+        </div>
+
+    </main>
+
+
+
+
+<style>
+    html{
+        box-sizing: border-box;
+        background-color:rgba(59,122,87, 0.3);
+    }
+
+
+    main{
+        width: 100%;
+    }
+
+    header{
+        background: url("https://images.agoramedia.com/everydayhealth/gcms/Bone-Fractures-Increasing-as-Seniors-Walk-Dogs-to-Stay-Active-722x406.jpg?width=722");
+        height: 10em;
+        font-size: 1.5em;
+        color: rgb(105,105,105);
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        height: 10em;
+        padding: 1% 1%;
+        margin: 1%;
+        background-position-x: right;
+        background-position-y: bottom;
+        background-repeat: no-repeat;
+        background-color: rgba(153,101,21,0.8);
+    }
+
+    .HderTitle{
+        padding: 1.5em 1em 3em 2em;
+    }
+
+    .container{
+        margin: 20px auto;
+        width:fit-content;
+        border-radius:20px;
+        background-color: rgba(153,101,21,0.8);
+        box-shadow: 0 0 16px 0;
+
+    }
+
+
+    .Title{
+        height: 5em;
+        background-color: rgba(135, 206, 250,0.7);
+        text-align:center;
+        font-size: 1.5em;
+        padding: 2em 1em 0em 1em;
+        border-radius:20px 20px 0 0;
+    }
+
+    .form-container{
+        width: fit-content;
+        padding: 1em;
+        background-color: rgba(135, 206, 250,0.7);
+        border-radius:0 0 20px 20px;
+    }
+
+    ul{
+        padding-left: 20px;
+    }
+
+    li{
+        height:50px;
+        list-style:none;
+    }
+
+    button{
+        box-shadow:0 8px 16px 0 rgba(0,0,0,0.2), -1px -1px 11px 6px rgba(0,0,0,0.19);
+        padding: 0.25rem;
+        margin: 0 5em;
+    }
+
+    .Buttons{
+        text-align: center;
+    }
+
+
+</style>
+
+
+
+
+<script>
+
+    function submit() {
+        document.getElementById("myForm").submit()
+        this.preventDefault();
+    }
+
+    function cancel(){
+        document.getElementById("myForm").reset()
+    }
+</script>
+
+
+</body>
+</html>
