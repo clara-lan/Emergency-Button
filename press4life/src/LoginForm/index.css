@@ -1,0 +1,12 @@
+.login-form-container{
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 16px 0;
+    background-color: rgba(145, 182, 196,0.8);
+    width: fit-content;
+}
+
+.pageContainer{
+    height: 60vh;
+}
