@@ -3,6 +3,7 @@ import { Navbar, Nav, NavDropdown, Form, Button, FormControl } from 'react-boots
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import RegForm from './RegForm';
+import LoginForm from './LoginForm';
 
 function App() {
   return (
@@ -56,7 +57,7 @@ const Home = () => <div>Hello World</div>
 
 const RegisterPage = () => <RegForm />
 
-const Login = () => <div> Login through this page </div>
+const Login = () => <LoginForm/>
 
 const AccountPage = () => <div> Display personal profile</div>
 
